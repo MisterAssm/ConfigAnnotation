@@ -1,9 +1,9 @@
-package be.zeldown.configannotation.tests;
+package objects;
 
 import be.zeldown.configannotation.Config;
 import be.zeldown.configannotation.ConfigFile;
 
-@ConfigFile(path = "be/zeldown/config", file = "config")
+@ConfigFile(path = "outputFiles", file = "config")
 public class Configs {
 
   @Config(key = "cps") public static boolean cps;

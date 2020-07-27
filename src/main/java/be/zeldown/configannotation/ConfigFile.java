@@ -5,15 +5,11 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-/**
- * @author guill
- */
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.FIELD)
-public @interface Config {
+@Target(ElementType.TYPE)
+public @interface ConfigFile {
 
-  public Side side() default Side.BOTH;
-  
-  public String key();
+	  String path();
+	  String file();
 
 }

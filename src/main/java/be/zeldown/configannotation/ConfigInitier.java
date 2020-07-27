@@ -1,16 +1,8 @@
 package be.zeldown.configannotation;
 
-
-
-import java.io.File;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.avaje.ebeaninternal.server.util.ClassPathSearch;
-import com.avaje.ebeaninternal.server.util.ClassPathSearchFilter;
-import com.avaje.ebeaninternal.server.util.ClassPathSearchMatcher;
-import com.google.gson.Gson;
 
 public class ConfigInitier {
 

@@ -1,17 +1,19 @@
 package be.zeldown.configannotation;
 
-
-
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
+/**
+ * @author guill
+ */
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.TYPE)
-public @interface ConfigFile {
+@Target(ElementType.FIELD)
+public @interface Config {
 
-	  public String path();
-	  public String file();
+  Side side() default Side.BOTH;
+  
+  String key();
 
 }

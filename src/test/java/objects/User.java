@@ -1,4 +1,4 @@
-package be.zeldown.configannotation.tests;
+package objects;
 
 public class User{
 

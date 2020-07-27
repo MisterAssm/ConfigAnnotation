@@ -1,1 +1,10 @@
-/bin/
+.bin/
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+*.iws
+log/
+target/
+outputFiles/
